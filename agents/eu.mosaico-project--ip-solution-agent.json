@@ -1,0 +1,18 @@
+{
+  "agentId": "eu.mosaico-project/ip-solution-agent",
+  "date": "2026-08-07",
+  "source": {
+    "url": "https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/mosaico-ip-agent/-/raw/main/src/mosaico_ip_agent/agent_card.json"
+  },
+  "installConfigs": [
+    {
+      "tool": "mosaico",
+      "config": {
+        "image": "TODO-registry.example.org/mosaico/ip-solution-agent",
+        "tag": "TODO",
+        "port": 0
+      },
+      "instructions": "Placeholder Docker coordinates — MOSAICO has not yet published a container registry location for this agent. Replace image/tag/port with real values once available."
+    }
+  ]
+}
