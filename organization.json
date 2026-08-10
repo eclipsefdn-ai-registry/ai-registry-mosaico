@@ -1,7 +1,7 @@
 {
   "id": "mosaico",
   "name": "MOSAICO Consortium",
-  "description": "Eclipse Research Labs project (Horizon Europe) building an open platform and protocols for coordinating and orchestrating multiple AI agents across the software development lifecycle.",
+  "description": "Horizon Europe research and innovation project developing a portfolio of AI-powered tools and techniques for software development, built around an ecosystem of intelligent agents that collaborate with developers to improve efficiency and software quality.",
   "website": "https://mosaico-project.eu",
   "tools": [
     { "id": "mosaico", "name": "MOSAICO" }
