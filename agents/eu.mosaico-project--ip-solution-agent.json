@@ -8,11 +8,10 @@
     {
       "tool": "mosaico",
       "config": {
-        "image": "TODO-registry.example.org/mosaico/ip-solution-agent",
-        "tag": "TODO",
-        "port": 0
-      },
-      "instructions": "Placeholder Docker coordinates — MOSAICO has not yet published a container registry location for this agent. Replace image/tag/port with real values once available."
+        "image": "registry.eclipse.org/eclipse-research-labs/mosaico-project/mosaico-ip-agent",
+        "tag": "0.2.3",
+        "port": 9000
+      }
     }
   ]
 }
