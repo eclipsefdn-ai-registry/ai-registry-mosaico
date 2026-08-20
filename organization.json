@@ -5,6 +5,6 @@
   "website": "https://mosaico-project.eu",
   "tools": [
     { "id": "mosaico", "name": "MOSAICO" }
-  ]
+  ],
   "color": "#8cc540"
 }
