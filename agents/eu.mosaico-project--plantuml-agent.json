@@ -1,5 +1,5 @@
 {
-  "agentId": "eu.mosaico-project/ip-solution-agent",
+  "agentId": "eu.mosaico-project/plantuml-agent",
   "date": "2026-08-20",
   "source": {
     "url": "https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/plantuml-agent/-/raw/main/src/plantuml_agent/agent_card.json"
