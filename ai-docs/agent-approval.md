@@ -16,18 +16,23 @@ The `config` object in an `installConfig` entry for the `mosaico` tool is intend
 
 ```json
 {
-  "image": "TODO-registry.example.org/mosaico/<agent-name>",
-  "tag": "TODO",
-  "port": 0,
+  "image": "registry.eclipse.org/eclipse-research-labs/mosaico-project/<agent-name>",
+  "tag": "<version-number>",
+  "port": <same as PORT>,
   "env": {
-    "TODO_ENV_VAR": "<placeholder>"
+    "MODEL_NAME": "<LLM identifier>",
+    "API_BASE": "<placeholder>",
+    "API_KEY": "<placeholder>",
+    "LANGFUSE_HOST": "https://cloud.langfuse.com",
+    "LANGFUSE_PUBLIC_KEY": "<placeholder>",
+    "LANGFUSE_SECRET_KEY": "<placeholder>"
   }
 }
 ```
 
 | Field | Type | Description |
 |:------|:-----|:------------|
-| `image` | string | Container image reference (registry/repository), e.g. `ghcr.io/eclipse-research-labs/mosaico/ip-solution-agent`. Use a `TODO`-prefixed placeholder until MOSAICO publishes a real registry location. |
+| `image` | string | Container image reference (registry/repository). MOSAICO agents are served from its Eclipse Gitlab container registry. |
 | `tag` | string | Image tag/version to pull. Use `TODO` until a real published tag is known. |
 | `port` | number | Port the agent listens on inside the container. Use `0` as a placeholder until confirmed. |
 | `env` | object | Optional. Environment variables required to run the container (e.g. API keys, service endpoints). Use `<placeholder>` values for secrets, mirroring the Theia MCP convention. |
@@ -35,12 +40,6 @@ The `config` object in an `installConfig` entry for the `mosaico` tool is intend
 ### Fields to omit
 
 None known at this time — this list should be revisited once a real container reference exists and the actual runtime's requirements are known (there may turn out to be fields, such as a `name` or `autostart` preference, that a specific tool's install mechanism manages itself and that should not be duplicated here).
-
-## Status: provisional
-
-MOSAICO has not yet published a container registry location for the IP Solution Agent (or any other agent). The field names above (`image`, `tag`, `port`, `env`) are a reasonable, defensible guess at what a Docker-based install config needs, **not** a confirmed contract — no MOSAICO documentation or runtime currently defines this shape.
-
-Whoever next updates an approval under the `mosaico` tool — once MOSAICO publishes real image coordinates and/or a documented install mechanism — should also revise this file to match reality (including removing this notice, filling in any fields that turn out to be wrong or missing, and adding an `installUrl` scheme if MOSAICO ever supports one-click install links).
 
 ## Guidelines
 
